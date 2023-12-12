@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Port">
+      <UniqueIdentifier>{666605ec-d44c-41e1-87a8-5a49c5fd7f5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TCP/IP">
+      <UniqueIdentifier>{984ddaa5-148c-4ff5-b5c8-fdb846bbac68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{ca3b7641-e36c-497e-99a4-794a4ee0cfe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SharedMemory">
+      <UniqueIdentifier>{caff3dbb-2992-454e-88f2-3a32d3700449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ReadWritefile">
+      <UniqueIdentifier>{7d97459a-8fc4-4ed3-93e8-6749f56ed310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Axis">
+      <UniqueIdentifier>{c399cadd-fd5b-43fa-a257-7bf10136978d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Httpconnect">
+      <UniqueIdentifier>{a0cb118b-5fbe-4f64-bd3a-db81063713eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Json">
+      <UniqueIdentifier>{3630180e-feac-4692-9f0c-967abdc1dbab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QRCode">
+      <UniqueIdentifier>{e2e8c9bf-017b-4ed2-bae9-60f0c113073e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MySQL">
+      <UniqueIdentifier>{79313bb8-4674-43d0-bf99-9d22677c3a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Axis\Adlink">
+      <UniqueIdentifier>{fafa1293-0544-4fc8-bdef-63f64a5fde7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Axis\Etel">
+      <UniqueIdentifier>{bab3117d-1b95-4342-85a6-d834b29434ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Axis\Galil">
+      <UniqueIdentifier>{e29de5b3-7709-4134-8c0a-0a77e27b5fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Axis\Googol">
+      <UniqueIdentifier>{9e7cc4da-4813-4152-9549-5cbcb2d4e54b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Axis\LeadShine">
+      <UniqueIdentifier>{ba540b65-5e96-4e1f-a80d-8ba889fd8443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Axis\MitsubishiGroup">
+      <UniqueIdentifier>{4714a770-699e-42b3-8b04-f1df596bd6ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Axis\Zmotion">
+      <UniqueIdentifier>{b08501c2-e32d-46ca-beb9-61879d01d17e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HalDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralFunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPIP\CTcpClient.h">
+      <Filter>TCP/IP</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPIP\CTcpServer.h">
+      <Filter>TCP/IP</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWritefile\CRWAccess.h">
+      <Filter>ReadWritefile</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWritefile\CRWxml.h">
+      <Filter>ReadWritefile</Filter>
+    </ClInclude>
+    <ClInclude Include="Httpconnect\CHttpConnect.h">
+      <Filter>Httpconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\AxisBase.h">
+      <Filter>Axis</Filter>
+    </ClInclude>
+    <ClInclude Include="json\autolink.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\config.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\features.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\forwards.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\reader.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\value.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\writer.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Port\CPortComm.h">
+      <Filter>Port</Filter>
+    </ClInclude>
+    <ClInclude Include="Port\SerialCommWt.h">
+      <Filter>Port</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\CThreadManage.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\bitstream.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\mask.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\mmask.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\mqrspec.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\qrencode.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\qrinput.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\qrspec.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\rsecc.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\split.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\CQRCode.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWritefile\CRWTable.h">
+      <Filter>ReadWritefile</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWritefile\tinyxml2.h">
+      <Filter>ReadWritefile</Filter>
+    </ClInclude>
+    <ClInclude Include="CSystemStatus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWritefile\CApplication.h">
+      <Filter>ReadWritefile</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWritefile\CRange.h">
+      <Filter>ReadWritefile</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWritefile\CWorkbook.h">
+      <Filter>ReadWritefile</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWritefile\CWorkbooks.h">
+      <Filter>ReadWritefile</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWritefile\CWorksheet.h">
+      <Filter>ReadWritefile</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWritefile\CWorksheets.h">
+      <Filter>ReadWritefile</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL\CRWMysql.h">
+      <Filter>MySQL</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCode\QRcodeBase.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedMemory\CSharedMemory.h">
+      <Filter>SharedMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\Adlink\Adlink.h">
+      <Filter>Axis\Adlink</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\Etel\Etel.h">
+      <Filter>Axis\Etel</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\Galil\Galil.h">
+      <Filter>Axis\Galil</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\Googol\Googol.h">
+      <Filter>Axis\Googol</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\LeadShine\Leisai.h">
+      <Filter>Axis\LeadShine</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\MitsubishiGroup\MitsubishiGroup.h">
+      <Filter>Axis\MitsubishiGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\Zmotion\Zmotion.h">
+      <Filter>Axis\Zmotion</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\InputBase.h">
+      <Filter>Axis</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\OutputBase.h">
+      <Filter>Axis</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\LeadShine\Dmc1380.h">
+      <Filter>Axis\LeadShine</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis\Googol\gts.h">
+      <Filter>Axis\Googol</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HalDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralFunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPIP\CTcpClient.cpp">
+      <Filter>TCP/IP</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPIP\CTcpServer.cpp">
+      <Filter>TCP/IP</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadWritefile\CRWAccess.cpp">
+      <Filter>ReadWritefile</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadWritefile\CRWxml.cpp">
+      <Filter>ReadWritefile</Filter>
+    </ClCompile>
+    <ClCompile Include="Httpconnect\CHttpConnect.cpp">
+      <Filter>Httpconnect</Filter>
+    </ClCompile>
+    <ClCompile Include="Port\CPortComm.cpp">
+      <Filter>Port</Filter>
+    </ClCompile>
+    <ClCompile Include="Port\SerialCommWt.cpp">
+      <Filter>Port</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\CThreadManage.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="QRCode\CQRCode.cpp">
+      <Filter>QRCode</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadWritefile\CRWTable.cpp">
+      <Filter>ReadWritefile</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadWritefile\tinyxml2.cpp">
+      <Filter>ReadWritefile</Filter>
+    </ClCompile>
+    <ClCompile Include="CSystemStatus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySQL\CRWMysql.cpp">
+      <Filter>MySQL</Filter>
+    </ClCompile>
+    <ClCompile Include="QRCode\QRcodeBase.cpp">
+      <Filter>QRCode</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedMemory\CSharedMemory.cpp">
+      <Filter>SharedMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="Axis\Adlink\Adlink.cpp">
+      <Filter>Axis\Adlink</Filter>
+    </ClCompile>
+    <ClCompile Include="Axis\Etel\Etel.cpp">
+      <Filter>Axis\Etel</Filter>
+    </ClCompile>
+    <ClCompile Include="Axis\Galil\Galil.cpp">
+      <Filter>Axis\Galil</Filter>
+    </ClCompile>
+    <ClCompile Include="Axis\Googol\Googol.cpp">
+      <Filter>Axis\Googol</Filter>
+    </ClCompile>
+    <ClCompile Include="Axis\LeadShine\Leisai.cpp">
+      <Filter>Axis\LeadShine</Filter>
+    </ClCompile>
+    <ClCompile Include="Axis\MitsubishiGroup\MitsubishiGroup.cpp">
+      <Filter>Axis\MitsubishiGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="Axis\Zmotion\Zmotion.cpp">
+      <Filter>Axis\Zmotion</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Hal.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Hal.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Hal.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

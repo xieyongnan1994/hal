@@ -1,0 +1,20 @@
+﻿  Googol.cpp
+D:\MFC\Hal\Axis\Googol\Googol.cpp(175,8): warning C4101: “sRtn”: 未引用的局部变量
+D:\MFC\Hal\Axis\Googol\Googol.cpp(176,11): warning C4101: “trap”: 未引用的局部变量
+  Leisai.cpp
+  Zmotion.cpp
+  正在生成代码...
+D:\MFC\Hal\Axis\Googol\Googol.cpp(90): warning C4715: “Googol::GetAxisState”: 不是所有的控件路径都返回值
+json_vc71_libmtd.lib(json_reader.obj) : warning LNK4099: 未找到 PDB“lib_json.pdb”(使用“json_vc71_libmtd.lib(json_reader.obj)”或在“D:\MFC\Hal\Debug\lib_json.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+json_vc71_libmtd.lib(json_value.obj) : warning LNK4099: 未找到 PDB“lib_json.pdb”(使用“json_vc71_libmtd.lib(json_value.obj)”或在“D:\MFC\Hal\Debug\lib_json.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+json_vc71_libmtd.lib(json_writer.obj) : warning LNK4099: 未找到 PDB“lib_json.pdb”(使用“json_vc71_libmtd.lib(json_writer.obj)”或在“D:\MFC\Hal\Debug\lib_json.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+qrencode.lib(bitstream.obj) : warning LNK4099: 未找到 PDB“”(使用“qrencode.lib(bitstream.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+qrencode.lib(mask.obj) : warning LNK4099: 未找到 PDB“qrencode.pdb”(使用“qrencode.lib(mask.obj)”或在“D:\MFC\Hal\Debug\qrencode.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+qrencode.lib(mmask.obj) : warning LNK4099: 未找到 PDB“qrencode.pdb”(使用“qrencode.lib(mmask.obj)”或在“D:\MFC\Hal\Debug\qrencode.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+qrencode.lib(mqrspec.obj) : warning LNK4099: 未找到 PDB“qrencode.pdb”(使用“qrencode.lib(mqrspec.obj)”或在“D:\MFC\Hal\Debug\qrencode.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+qrencode.lib(qrencode.obj) : warning LNK4099: 未找到 PDB“qrencode.pdb”(使用“qrencode.lib(qrencode.obj)”或在“D:\MFC\Hal\Debug\qrencode.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+qrencode.lib(qrinput.obj) : warning LNK4099: 未找到 PDB“qrencode.pdb”(使用“qrencode.lib(qrinput.obj)”或在“D:\MFC\Hal\Debug\qrencode.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+qrencode.lib(qrspec.obj) : warning LNK4099: 未找到 PDB“qrencode.pdb”(使用“qrencode.lib(qrspec.obj)”或在“D:\MFC\Hal\Debug\qrencode.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+qrencode.lib(rsecc.obj) : warning LNK4099: 未找到 PDB“qrencode.pdb”(使用“qrencode.lib(rsecc.obj)”或在“D:\MFC\Hal\Debug\qrencode.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+qrencode.lib(split.obj) : warning LNK4099: 未找到 PDB“qrencode.pdb”(使用“qrencode.lib(split.obj)”或在“D:\MFC\Hal\Debug\qrencode.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  Hal.vcxproj -> D:\MFC\Hal\Debug\Hal.exe
