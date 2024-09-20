@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{D3212E43-30E9-4896-89A3-8D4AD8918E7E}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>Hal</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);C:\Program Files\MySQL\MySQL Server 5.5\include</IncludePath>
+    <ReferencePath>C:\Program Files\MySQL\MySQL Server 5.5\lib;$(ReferencePath)</ReferencePath>
+    <LibraryPath>C:\Program Files\MySQL\MySQL Server 5.5\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./xis;./Httpconnect;./Port;./ReadWritefile;./SharedMemory;./TCPIP;./Thread;./json;D:\MFC\Hal;./QRCode;./MySQL;./Axis/LeadShine;./Axis/Adlink;./Axis/Etel;./Axis/Galil;./Axis/Googol;./Axis/MitsubishiGroup;./Axis/Zmotion;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ConformanceMode>Default</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>json_vc71_libmtd.lib;qrencode.lib;Dmc1380.lib;gts.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./json;./ReadWritefile;./QRCode;./MySQL;./Axis/Adlink;./Axis/Etel;./Axis/Galil;./Axis/Googol;./Axis/LeadShine;./Axis/MitsubishiGroup;./Axis/Zmotion;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Axis\Adlink\Adlink.h" />
+    <ClInclude Include="Axis\AxisBase.h" />
+    <ClInclude Include="Axis\Etel\Etel.h" />
+    <ClInclude Include="Axis\Galil\Galil.h" />
+    <ClInclude Include="Axis\Googol\Googol.h" />
+    <ClInclude Include="Axis\Googol\gts.h" />
+    <ClInclude Include="Axis\InputBase.h" />
+    <ClInclude Include="Axis\LeadShine\Dmc1380.h" />
+    <ClInclude Include="Axis\LeadShine\Leisai.h" />
+    <ClInclude Include="Axis\MitsubishiGroup\MitsubishiGroup.h" />
+    <ClInclude Include="Axis\OutputBase.h" />
+    <ClInclude Include="Axis\Zmotion\Zmotion.h" />
+    <ClInclude Include="CSystemStatus.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="GeneralFunction.h" />
+    <ClInclude Include="Hal.h" />
+    <ClInclude Include="HalDlg.h" />
+    <ClInclude Include="Httpconnect\CHttpConnect.h" />
+    <ClInclude Include="json\autolink.h" />
+    <ClInclude Include="json\config.h" />
+    <ClInclude Include="json\features.h" />
+    <ClInclude Include="json\forwards.h" />
+    <ClInclude Include="json\json.h" />
+    <ClInclude Include="json\reader.h" />
+    <ClInclude Include="json\value.h" />
+    <ClInclude Include="json\writer.h" />
+    <ClInclude Include="MySQL\CRWMysql.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Port\CPortComm.h" />
+    <ClInclude Include="Port\SerialCommWt.h" />
+    <ClInclude Include="QRCode\bitstream.h" />
+    <ClInclude Include="QRCode\CQRCode.h" />
+    <ClInclude Include="QRCode\mask.h" />
+    <ClInclude Include="QRCode\mmask.h" />
+    <ClInclude Include="QRCode\mqrspec.h" />
+    <ClInclude Include="QRCode\QRcodeBase.h" />
+    <ClInclude Include="QRCode\qrencode.h" />
+    <ClInclude Include="QRCode\qrinput.h" />
+    <ClInclude Include="QRCode\qrspec.h" />
+    <ClInclude Include="QRCode\rsecc.h" />
+    <ClInclude Include="QRCode\split.h" />
+    <ClInclude Include="ReadWritefile\CApplication.h" />
+    <ClInclude Include="ReadWritefile\CRange.h" />
+    <ClInclude Include="ReadWritefile\CRWAccess.h" />
+    <ClInclude Include="ReadWritefile\CRWTable.h" />
+    <ClInclude Include="ReadWritefile\CRWxml.h" />
+    <ClInclude Include="ReadWritefile\CWorkbook.h" />
+    <ClInclude Include="ReadWritefile\CWorkbooks.h" />
+    <ClInclude Include="ReadWritefile\CWorksheet.h" />
+    <ClInclude Include="ReadWritefile\CWorksheets.h" />
+    <ClInclude Include="ReadWritefile\tinyxml2.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SharedMemory\CSharedMemory.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TCPIP\CTcpClient.h" />
+    <ClInclude Include="TCPIP\CTcpServer.h" />
+    <ClInclude Include="Thread\CThreadManage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Axis\Adlink\Adlink.cpp" />
+    <ClCompile Include="Axis\Etel\Etel.cpp" />
+    <ClCompile Include="Axis\Galil\Galil.cpp" />
+    <ClCompile Include="Axis\Googol\Googol.cpp" />
+    <ClCompile Include="Axis\LeadShine\Leisai.cpp" />
+    <ClCompile Include="Axis\MitsubishiGroup\MitsubishiGroup.cpp" />
+    <ClCompile Include="Axis\Zmotion\Zmotion.cpp" />
+    <ClCompile Include="CSystemStatus.cpp" />
+    <ClCompile Include="GeneralFunction.cpp" />
+    <ClCompile Include="Hal.cpp" />
+    <ClCompile Include="HalDlg.cpp" />
+    <ClCompile Include="Httpconnect\CHttpConnect.cpp" />
+    <ClCompile Include="MySQL\CRWMysql.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Port\CPortComm.cpp" />
+    <ClCompile Include="Port\SerialCommWt.cpp" />
+    <ClCompile Include="QRCode\CQRCode.cpp" />
+    <ClCompile Include="QRCode\QRcodeBase.cpp" />
+    <ClCompile Include="ReadWritefile\CRWAccess.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ReadWritefile\CRWTable.cpp" />
+    <ClCompile Include="ReadWritefile\CRWxml.cpp" />
+    <ClCompile Include="ReadWritefile\tinyxml2.cpp" />
+    <ClCompile Include="SharedMemory\CSharedMemory.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TCPIP\CTcpClient.cpp" />
+    <ClCompile Include="TCPIP\CTcpServer.cpp" />
+    <ClCompile Include="Thread\CThreadManage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Hal.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Hal.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Hal.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
