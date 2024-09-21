@@ -42,6 +42,47 @@ int CHttpClient::HttpPost(LPCTSTR strUrl, CString& strResponse, LPCTSTR strPostD
 	return ExecuteRequest(_T("POST"), strUrl, strPostData, strResponse, strStatusCode, strHeader);
 }
 
+CString CHttpClient::Base64Encode(CString src, int srclen)
+{
+	unsigned char* base64 = (unsigned char*)"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+	int n, buflen, i, j;
+	unsigned char* dst;
+	CString buf = src;
+	buflen = n = srclen;
+	dst = (unsigned char*)malloc(buflen / 3 * 4 + 3);
+	memset(dst, 0, buflen / 3 * 4 + 3);
+	for (i = 0, j = 0; i <= buflen - 3; i += 3, j += 4)
+	{
+		dst[j] = (buf[i] & 0xFC) >> 2;
+		dst[j + 1] = ((buf[i] & 0x03) << 4) + ((buf[i + 1] & 0xF0) >> 4);
+		dst[j + 2] = ((buf[i + 1] & 0x0F) << 2) + ((buf[i + 2] & 0xC0) >> 6);
+		dst[j + 3] = buf[i + 2] & 0x3F;
+	}
+	if (n % 3 == 1)
+	{
+		dst[j] = (buf[i] & 0xFC) >> 2;
+		dst[j + 1] = ((buf[i] & 0x03) << 4);
+		dst[j + 2] = 64;
+		dst[j + 3] = 64;
+		j += 4;
+	}
+	else if (n % 3 == 2)
+	{
+		dst[j] = (buf[i] & 0xFC) >> 2;
+		dst[j + 1] = ((buf[i] & 0x03) << 4) + ((buf[i + 1] & 0xF0) >> 4);
+		dst[j + 2] = ((buf[i + 1] & 0x0F) << 2);
+		dst[j + 3] = 64;
+		j += 4;
+	}
+
+	for (i = 0; i < j; i++)
+	{
+		dst[i] = base64[(int)dst[i]];
+	}
+	dst[j] = 0;
+	return CString(dst);
+}
+
 //Ö´ÐÐÇëÇó
 int CHttpClient::ExecuteRequest(LPCTSTR strMethod, LPCTSTR strUrl, LPCTSTR strPostData, CString& strResponse, CString& strStatusCode, CString strHeader)
 {
